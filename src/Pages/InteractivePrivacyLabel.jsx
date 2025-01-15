@@ -25,32 +25,9 @@ const InteractivePrivacyLabel = () => {
   const devices = [
     {
       id: 1,
-      name: "Smart Home Hub Pro",
-      category: "Controller",
-      privacyScore: "A",
-      securityScore: "A+",
-      dataCollection: {
-        personal: 20,
-        usage: 45,
-        environmental: 35,
-      },
-      features: {
-        encryption: "End-to-end",
-        storage: "Local with cloud backup",
-        sharing: "Anonymous data only",
-        retention: "30 days",
-        updates: "Automatic monthly",
-      },
-      details: "Premium smart home controller with advanced privacy features",
-      risks: [],
-      certifications: ["GDPR", "ISO 27001", "Privacy Shield"],
-    },
-    {
-      id: 2,
-      name: "Security Camera X2",
-      category: "Security",
+      name: "ALECTO Video-Babyphone SMARTBABY5",
+      category: "Baby Monitoring",
       privacyScore: "B+",
-      securityScore: "A",
       dataCollection: {
         personal: 30,
         usage: 40,
@@ -58,150 +35,163 @@ const InteractivePrivacyLabel = () => {
       },
       features: {
         encryption: "AES-256",
-        storage: "Cloud with local backup",
+        storage: "Local with cloud backup",
         sharing: "Optional third-party",
         retention: "14 days",
         updates: "Automatic weekly",
       },
-      details: "High-resolution security camera with motion detection",
-      risks: ["Cloud storage required", "Third-party integrations"],
-      certifications: ["GDPR", "UL Certified"],
+      details: "ALECTO Baby Monitoring device priced at $99.99",
+      risks: ["Cloud storage optional"],
+      certifications: ["GDPR", "CE"],
     },
     {
-      id: 3,
-      name: "Smart Display",
-      category: "Display",
+      id: 2,
+      name: "BOIFUN Babyphone mit Kamera",
+      category: "Baby Monitoring",
       privacyScore: "B",
-      securityScore: "B+",
       dataCollection: {
-        personal: 40,
+        personal: 35,
         usage: 35,
-        environmental: 25,
-      },
-      features: {
-        encryption: "Standard",
-        storage: "Cloud only",
-        sharing: "Third-party analytics",
-        retention: "60 days",
-        updates: "Manual",
-      },
-      details: "Interactive display with voice control",
-      risks: ["Always listening", "Cloud dependency"],
-      certifications: ["GDPR"],
-    },
-    {
-      id: 4,
-      name: "Smart Lock Pro",
-      category: "Security",
-      privacyScore: "A+",
-      securityScore: "A+",
-      dataCollection: {
-        personal: 15,
-        usage: 50,
-        environmental: 35,
-      },
-      features: {
-        encryption: "Military-grade",
-        storage: "Local only",
-        sharing: "None",
-        retention: "7 days",
-        updates: "Automatic monthly",
-      },
-      details: "Advanced smart lock with biometric authentication",
-      risks: [],
-      certifications: ["GDPR", "ISO 27001", "UL Listed"],
-    },
-    {
-      id: 5,
-      name: "Environment Sensor",
-      category: "Sensor",
-      privacyScore: "A",
-      securityScore: "A",
-      dataCollection: {
-        personal: 0,
-        usage: 60,
-        environmental: 40,
-      },
-      features: {
-        encryption: "Standard",
-        storage: "Local first",
-        sharing: "Optional aggregated",
-        retention: "90 days",
-        updates: "Automatic quarterly",
-      },
-      details: "Multi-sensor for temperature, humidity, and air quality",
-      risks: [],
-      certifications: ["Energy Star", "GDPR"],
-    },
-    {
-      id: 6,
-      name: "Smart Thermostat",
-      category: "Climate",
-      privacyScore: "B+",
-      securityScore: "A",
-      dataCollection: {
-        personal: 10,
-        usage: 50,
-        environmental: 40,
-      },
-      features: {
-        encryption: "Standard",
-        storage: "Hybrid",
-        sharing: "Utility partner only",
-        retention: "12 months",
-        updates: "Automatic monthly",
-      },
-      details: "Energy-efficient smart thermostat with learning capabilities",
-      risks: ["Optional utility data sharing"],
-      certifications: ["Energy Star", "GDPR"],
-    },
-    {
-      id: 7,
-      name: "Mesh WiFi System",
-      category: "Network",
-      privacyScore: "A",
-      securityScore: "A+",
-      dataCollection: {
-        personal: 5,
-        usage: 55,
-        environmental: 40,
-      },
-      features: {
-        encryption: "WPA3",
-        storage: "Local only",
-        sharing: "None",
-        retention: "30 days",
-        updates: "Automatic weekly",
-      },
-      details: "High-performance mesh network system with advanced security",
-      risks: [],
-      certifications: ["GDPR", "ISO 27001"],
-    },
-    {
-      id: 8,
-      name: "Video Doorbell Pro",
-      category: "Security",
-      privacyScore: "B+",
-      securityScore: "A",
-      dataCollection: {
-        personal: 25,
-        usage: 45,
         environmental: 30,
       },
       features: {
+        encryption: "AES-128",
+        storage: "Local only",
+        sharing: "No third-party",
+        retention: "7 days",
+        updates: "Manual",
+      },
+      details: "BOIFUN Baby Monitoring device priced at $89.99",
+      risks: ["No cloud backup"],
+      certifications: ["CE"],
+    },
+    {
+      id: 3,
+      name: "APPLE HomePod Lautsprecher",
+      category: "Audio",
+      privacyScore: "A",
+      dataCollection: {
+        personal: 25,
+        usage: 50,
+        environmental: 25,
+      },
+      features: {
         encryption: "End-to-end",
-        storage: "Cloud required",
+        storage: "Local with cloud sync",
+        sharing: "Apple services only",
+        retention: "User-controlled",
+        updates: "Automatic",
+      },
+      details: "APPLE Audio device priced at $299.99",
+      risks: ["Data shared within Apple ecosystem"],
+      certifications: ["GDPR", "ISO 27001"],
+    },
+    {
+      id: 4,
+      name: "GOOGLE Nest Mini 2",
+      category: "Audio",
+      privacyScore: "A",
+      dataCollection: {
+        personal: 30,
+        usage: 50,
+        environmental: 20,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Cloud",
+        sharing: "Google services and partners",
+        retention: "User-controlled",
+        updates: "Automatic",
+      },
+      details: "GOOGLE Audio device priced at $49.99",
+      risks: ["Data used for ad personalization"],
+      certifications: ["GDPR", "ISO 27001"],
+    },
+    {
+      id: 5,
+      name: "MEATER Block",
+      category: "Cooking",
+      privacyScore: "A+",
+      dataCollection: {
+        personal: 10,
+        usage: 60,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Local",
+        sharing: "No third-party",
+        retention: "User-controlled",
+        updates: "Automatic",
+      },
+      details: "MEATER Cooking device priced at $249.99",
+      risks: ["Limited data collection"],
+      certifications: ["GDPR", "CE"],
+    },
+    {
+      id: 6,
+      name: "EUFY Überwachungskamera Security by ANKER eufyCam 2 Pro",
+      category: "Security",
+      privacyScore: "A",
+      dataCollection: {
+        personal: 40,
+        usage: 40,
+        environmental: 20,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Local with cloud option",
         sharing: "Optional third-party",
         retention: "30 days",
-        updates: "Automatic monthly",
+        updates: "Automatic",
       },
-      details:
-        "Smart doorbell with advanced motion detection and video recording",
-      risks: ["Cloud storage required"],
-      certifications: ["GDPR", "UL Listed"],
+      details: "EUFY Security device priced at $199.99",
+      risks: ["Potential cloud vulnerabilities"],
+      certifications: ["GDPR", "CE"],
+    },
+    {
+      id: 7,
+      name: "PetTec Cam Lite",
+      category: "Pet Monitoring",
+      privacyScore: "B+",
+      dataCollection: {
+        personal: 30,
+        usage: 40,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-128",
+        storage: "Local",
+        sharing: "No third-party",
+        retention: "7 days",
+        updates: "Manual",
+      },
+      details: "PetTec Pet Monitoring device priced at $59.99",
+      risks: ["No cloud backup", "Manual updates"],
+      certifications: ["CE"],
+    },
+    {
+      id: 8,
+      name: "Roborock Qrevo Plus Saug-und Wischroboter Weiß App gesteuert",
+      category: "Cleaning",
+      privacyScore: "A",
+      dataCollection: {
+        personal: 20,
+        usage: 50,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Cloud",
+        sharing: "Roborock services",
+        retention: "User-controlled",
+        updates: "Automatic",
+      },
+      details: "Roborock Cleaning device priced at $799.99",
+      risks: ["Data shared with manufacturer"],
+      certifications: ["GDPR", "CE"],
     },
   ];
-
   const getScoreColor = (score) => {
     switch (score[0]) {
       case "A":
@@ -237,7 +227,9 @@ const InteractivePrivacyLabel = () => {
     );
 
     return (
-      <div className={`bg-white select-none ${isGridView ? "p-4" : "p-6"} mt-4`}>
+      <div
+        className={`bg-white select-none ${isGridView ? "p-4" : "p-6"} mt-4`}
+      >
         <div
           className={
             isGridView ? "space-y-6" : "grid grid-cols-1 md:grid-cols-2 gap-6"
@@ -427,13 +419,13 @@ const InteractivePrivacyLabel = () => {
                 </div>
 
                 {/* Basic Info */}
-                <div className="mt-4">
+                {/* <div className="mt-4">
                   <div className="flex items-center gap-2">
                     <Shield className="w-4 h-4 text-blue-500" />
                     <span>Security Score: {device.securityScore}</span>
                   </div>
                   <p className="mt-2 text-gray-600 text-sm">{device.details}</p>
-                </div>
+                </div> */}
 
                 {/* Toggle Details Button */}
                 <button
