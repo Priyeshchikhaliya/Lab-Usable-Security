@@ -436,20 +436,20 @@ const InteractivePrivacyLabel = () => {
                   }
                   className="mt-4 text-blue-500 text-sm flex items-center gap-1"
                 >
-                  {selectedDevice === device.id ? (
-                    <>
-                      Less Details
-                      <ChevronUp className="w-4 h-4" />
-                    </>
-                  ) : (
+                  {/* {selectedDevice === device.id ? ( */}
+                  <>
+                    Less Details
+                    <ChevronUp className="w-4 h-4" />
+                  </>
+                  {/* ) : (
                     <>
                       More Details
                       <ChevronDown className="w-4 h-4" />
                     </>
-                  )}
+                  )} */}
                 </button>
 
-                {selectedDevice === device.id && (
+                {selectedDevice !== device.id && (
                   <DetailView
                     device={device}
                     isGridView={viewType === "grid"}

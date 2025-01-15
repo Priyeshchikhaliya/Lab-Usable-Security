@@ -11,7 +11,7 @@ import {
   ChevronUp,
   Filter,
 } from "lucide-react";
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+
 import product1 from "../assets/product1.jpg";
 import product2 from "../assets/product2.jpg";
 import product3 from "../assets/product3.jpeg";
@@ -285,7 +285,7 @@ const DataCollectionChart = ({ data }) => {
 };
 
 const DeviceCard = ({ device }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
@@ -335,7 +335,7 @@ const DeviceCard = ({ device }) => {
         </div>
 
         <button
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={() => setIsExpanded(isExpanded)}
           className="text-blue-600 text-sm flex items-center gap-1 mb-4"
         >
           {isExpanded ? (
