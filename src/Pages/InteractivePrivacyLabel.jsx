@@ -450,7 +450,7 @@ const InteractivePrivacyLabel = () => {
                   )} */}
                 </button>
 
-                {selectedDevice !== device.id && (
+                {selectedDevice == device.id && (
                   <DetailView
                     device={device}
                     isGridView={viewType === "grid"}

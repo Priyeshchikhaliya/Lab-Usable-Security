@@ -286,7 +286,7 @@ const DataCollectionChart = ({ data }) => {
 };
 
 const DeviceCard = ({ device }) => {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-300">
