@@ -24,58 +24,6 @@ import product8 from "../assets/product8.jpg";
 const devices = [
   {
     id: 1,
-    name: "ALECTO Video-Babyphone SMARTBABY5",
-    category: "Baby Monitoring",
-    manufacturer: "ALECTO",
-    price: "$99.99",
-    privacyScore: "B+",
-    imageUrl: product1,
-    privacyDetails: {
-      dataCollection: ["Video", "Audio"],
-      dataTypes: {
-        personal: 30,
-        usage: 40,
-        environmental: 30,
-      },
-      features: {
-        encryption: "AES-256",
-        storage: "Local with cloud backup",
-        sharing: "Optional third-party",
-        retention: "14 days",
-        updates: "Automatic weekly",
-      },
-      risks: ["Cloud storage optional"],
-      certifications: ["GDPR", "CE"],
-    },
-  },
-  {
-    id: 2,
-    name: "BOIFUN Babyphone mit Kamera",
-    category: "Baby Monitoring",
-    manufacturer: "BOIFUN",
-    price: "$89.99",
-    privacyScore: "B",
-    imageUrl: product2,
-    privacyDetails: {
-      dataCollection: ["Video", "Audio"],
-      dataTypes: {
-        personal: 35,
-        usage: 35,
-        environmental: 30,
-      },
-      features: {
-        encryption: "AES-128",
-        storage: "Local only",
-        sharing: "No third-party",
-        retention: "7 days",
-        updates: "Manual",
-      },
-      risks: ["No cloud backup"],
-      certifications: ["CE"],
-    },
-  },
-  {
-    id: 3,
     name: "APPLE HomePod Lautsprecher",
     category: "Audio",
     manufacturer: "APPLE",
@@ -101,7 +49,7 @@ const devices = [
     },
   },
   {
-    id: 4,
+    id: 2,
     name: "GOOGLE Nest Mini 2",
     category: "Audio",
     manufacturer: "GOOGLE",
@@ -126,6 +74,59 @@ const devices = [
       certifications: ["GDPR", "ISO 27001"],
     },
   },
+  {
+    id: 3,
+    name: "ALECTO Video-Babyphone SMARTBABY5",
+    category: "Baby Monitoring",
+    manufacturer: "ALECTO",
+    price: "$99.99",
+    privacyScore: "B+",
+    imageUrl: product1,
+    privacyDetails: {
+      dataCollection: ["Video", "Audio"],
+      dataTypes: {
+        personal: 30,
+        usage: 40,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Local with cloud backup",
+        sharing: "Optional third-party",
+        retention: "14 days",
+        updates: "Automatic weekly",
+      },
+      risks: ["Cloud storage optional"],
+      certifications: ["GDPR", "CE"],
+    },
+  },
+  {
+    id: 4,
+    name: "BOIFUN Babyphone mit Kamera",
+    category: "Baby Monitoring",
+    manufacturer: "BOIFUN",
+    price: "$89.99",
+    privacyScore: "B",
+    imageUrl: product2,
+    privacyDetails: {
+      dataCollection: ["Video", "Audio"],
+      dataTypes: {
+        personal: 35,
+        usage: 35,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-128",
+        storage: "Local only",
+        sharing: "No third-party",
+        retention: "7 days",
+        updates: "Manual",
+      },
+      risks: ["No cloud backup"],
+      certifications: ["CE"],
+    },
+  },
+
   {
     id: 5,
     name: "MEATER Block",
@@ -295,7 +296,7 @@ const DeviceCard = ({ device }) => {
           alt={device.name}
           className="w-full h-64 object-contain bg-gray-50"
         />
-        <div className="absolute top-4 right-4 flex gap-2">
+        {/* <div className="absolute top-4 right-4 flex gap-2">
           <span
             className={`px-3 py-1 rounded-full text-sm font-medium ${getScoreClass(
               device.privacyScore
@@ -308,7 +309,7 @@ const DeviceCard = ({ device }) => {
               Security: {device.securityScore}
             </span>
           )}
-        </div>
+        </div> */}
       </div>
 
       <div className="p-6">

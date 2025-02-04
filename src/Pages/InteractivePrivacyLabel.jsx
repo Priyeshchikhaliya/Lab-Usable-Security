@@ -24,48 +24,6 @@ const InteractivePrivacyLabel = () => {
 
   const devices = [
     {
-      id: 1,
-      name: "ALECTO Video-Babyphone SMARTBABY5",
-      category: "Baby Monitoring",
-      privacyScore: "B+",
-      dataCollection: {
-        personal: 30,
-        usage: 40,
-        environmental: 30,
-      },
-      features: {
-        encryption: "AES-256",
-        storage: "Local with cloud backup",
-        sharing: "Optional third-party",
-        retention: "14 days",
-        updates: "Automatic weekly",
-      },
-      details: "ALECTO Baby Monitoring device priced at $99.99",
-      risks: ["Cloud storage optional"],
-      certifications: ["GDPR", "CE"],
-    },
-    {
-      id: 2,
-      name: "BOIFUN Babyphone mit Kamera",
-      category: "Baby Monitoring",
-      privacyScore: "B",
-      dataCollection: {
-        personal: 35,
-        usage: 35,
-        environmental: 30,
-      },
-      features: {
-        encryption: "AES-128",
-        storage: "Local only",
-        sharing: "No third-party",
-        retention: "7 days",
-        updates: "Manual",
-      },
-      details: "BOIFUN Baby Monitoring device priced at $89.99",
-      risks: ["No cloud backup"],
-      certifications: ["CE"],
-    },
-    {
       id: 3,
       name: "APPLE HomePod Lautsprecher",
       category: "Audio",
@@ -107,6 +65,49 @@ const InteractivePrivacyLabel = () => {
       risks: ["Data used for ad personalization"],
       certifications: ["GDPR", "ISO 27001"],
     },
+    {
+      id: 1,
+      name: "ALECTO Video-Babyphone SMARTBABY5",
+      category: "Baby Monitoring",
+      privacyScore: "B+",
+      dataCollection: {
+        personal: 30,
+        usage: 40,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-256",
+        storage: "Local with cloud backup",
+        sharing: "Optional third-party",
+        retention: "14 days",
+        updates: "Automatic weekly",
+      },
+      details: "ALECTO Baby Monitoring device priced at $99.99",
+      risks: ["Cloud storage optional"],
+      certifications: ["GDPR", "CE"],
+    },
+    {
+      id: 2,
+      name: "BOIFUN Babyphone mit Kamera",
+      category: "Baby Monitoring",
+      privacyScore: "B",
+      dataCollection: {
+        personal: 35,
+        usage: 35,
+        environmental: 30,
+      },
+      features: {
+        encryption: "AES-128",
+        storage: "Local only",
+        sharing: "No third-party",
+        retention: "7 days",
+        updates: "Manual",
+      },
+      details: "BOIFUN Baby Monitoring device priced at $89.99",
+      risks: ["No cloud backup"],
+      certifications: ["CE"],
+    },
+
     {
       id: 5,
       name: "MEATER Block",
@@ -409,13 +410,13 @@ const InteractivePrivacyLabel = () => {
                     <h2 className="text-xl font-semibold">{device.name}</h2>
                     <p className="text-gray-500">{device.category}</p>
                   </div>
-                  <div
+                  {/* <div
                     className={`px-3 py-1 rounded-full ${getScoreColor(
                       device.privacyScore
                     )}`}
                   >
                     {device.privacyScore}
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Basic Info */}
